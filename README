@@ -1,0 +1,21 @@
+script2app for macosx by sebastian volland
+
+this script bundles a custom shell script into a standalone .app. you can then
+put this standalone launcher.app into your /Applications folder and run it from
+within spotlight or finder.
+
+you can do the same with applescript, but applescript is slow, and that sucks.
+
+requirements:
+
+ * xcode (tested with xcode 4.0.2)
+
+instructions:
+
+ * first create your shell script, or edit myscript.sh
+ * create launcher: ./script2app myscript.sh
+ * this will produce launcher.app in the current directory.
+ * move the app to your /Applications folder if you like:
+   mv launcher.app /Applications/mylauncher.app
+ * done.
+
